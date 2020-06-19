@@ -38,7 +38,7 @@ int solution(int A[], int N) {
 
     for (int i = 0; i < N; i++) {
         if (A[i] > max) {
-            printf("new max, A[%d] = %d\n", i, A[i]);
+            // printf("new max, A[%d] = %d\n", i, A[i]);
             min = max;
             max = A[i];
         }
@@ -49,7 +49,7 @@ int solution(int A[], int N) {
         solution = max - 1;
     }
 
-    printf("found max %d with min %d\n", max, min);
+    // printf("found max %d with min %d\n", max, min);
 
     // sweep to find solution
     for (int i = max - 1; i > 0; i--) {
@@ -66,7 +66,7 @@ int solution(int A[], int N) {
     }
 
     if (!gapFound) {
-        printf("found no gap\n");
+        // printf("found no gap\n");
         if (max == 1) {
             solution = 1;
         } else {
