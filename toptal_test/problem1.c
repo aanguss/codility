@@ -1,0 +1,1 @@
+// problem 1 from Toptal screening test
